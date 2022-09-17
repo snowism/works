@@ -63,32 +63,10 @@ footer {
 
 /* navbar */
 nav {
-  background: var(--clr-white);
+  background: #fff;
   padding: 1rem 1.5rem;
 }
 
-/* fixed nav */
-.fixed-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--clr-white);
-  -webkit-box-shadow: var(--light-shadow);
-          box-shadow: var(--light-shadow);
-}
-
-.fixed-nav .links a {
-  color: var(--clr-grey-1);
-}
-
-.fixed-nav .links a:hover {
-  color: var(--clr-secondary);
-}
-
-/* .fixed-nav .links-container {
-  height: auto !important;
-} */
 .nav-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,50 +79,8 @@ nav {
           justify-content: space-between;
 }
 
-.nav-toggle {
-  font-size: 1.5rem;
-  color: var(--clr-grey-1);
-  background: transparent;
-  border-color: transparent;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  cursor: pointer;
-}
-
-.nav-toggle:hover {
-  color: var(--clr-secondary);
-}
-
 .logo {
   height: 50px;
-}
-
-.links-container {
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-
-.show-links {
-  height: 200px;
-}
-
-.links a {
-  background: var(--clr-white);
-  color: var(--clr-grey-5);
-  font-size: 1.1rem;
-  text-transform: capitalize;
-  letter-spacing: var(--spacing);
-  display: block;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  font-weight: bold;
-  padding: 0.75rem 0;
-}
-
-.links a:hover {
-  color: var(--clr-grey-1);
 }
 
 @media screen and (min-width: 800px) {
@@ -167,33 +103,6 @@ nav {
   }
   .nav-header {
     padding: 0;
-  }
-  .nav-toggle {
-    display: none;
-  }
-  .links-container {
-    height: auto !important;
-  }
-  .links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .links a {
-    background: transparent;
-    color: var(--clr-white);
-    font-size: 1.1rem;
-    text-transform: capitalize;
-    letter-spacing: var(--spacing);
-    display: block;
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-    margin: 0 1rem;
-    font-weight: bold;
-    padding: 0;
-  }
-  .links a:hover {
-    color: var(--clr-white);
   }
 }
 
